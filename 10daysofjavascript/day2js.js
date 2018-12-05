@@ -1,22 +1,3 @@
-'use strict';
-
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
-
-let inputString = '';
-let currentLine = 0;
-
-process.stdin.on('data', inputStdin => {
-    inputString += inputStdin;
-});
-
-process.stdin.on('end', _ => {
-    inputString = inputString.trim().split('\n').map(string => {
-        return string.trim();
-    });
-    
-    main();    
-});
 
 function readLine() {
     return inputString[currentLine++];
@@ -40,3 +21,25 @@ function getGrade(score) {
     }
     return grade;
 }
+
+// SECOND ALGORITHM SOLUTION DAY 2, 10 DAYS OF JAVASCRIPT
+
+
+function getLetter(s) {
+    let letter = "";
+    // Write your code here
+    s = s[0];
+    if ("a e i o u".includes(s)) {
+        letter = 'A';
+    } else if ("b, c, d, f, g".includes(s)) {
+        letter = 'B';
+    } else if ("h, j, k, l, m".includes(s)) {
+        letter = 'C';
+    } else if ("n, p, q , r, s, t, v, w, x, y, z") {
+        letter = 'D';
+    }
+    return letter;
+}
+
+// THIRD ALGORITHM SOLUTION DAY 2, 10 DAYS OF JAVASCRIPT
+
