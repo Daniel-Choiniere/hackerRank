@@ -15,7 +15,7 @@ function getSecondLargest(nums) {
     } return largestNumber - 1;
 }
 
-// Solution to second algorithim of day 3
+    // Solution to SECOND algorithim of day 3
 
 /*
  * Complete the reverseString function
@@ -33,3 +33,21 @@ function reverseString(s) {
         console.log(s.split("").reverse().join(""));
     }
 } 
+
+    // Solution to THIRD algorithim of day 3
+
+/*
+ * Complete the isPositive function.
+ * If 'a' is positive, return "YES".
+ * If 'a' is 0, throw an Error with the message "Zero Error"
+ * If 'a' is negative, throw an Error with the message "Negative Error"
+ */
+function isPositive(a) {
+    if (a > 0) {
+        return "YES";
+    } else if (a === 0) {
+       return "Zero Error"
+    } else {
+        return "Negative Error"
+    }
+}
